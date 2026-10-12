@@ -21,7 +21,7 @@ createRoot(document.getElementById("root")).render(
                     <Route path="register" element={<Register />} />
                     <Route path="login" element={<Login />} />
                     <Route path="bids" element={<MyBids />} />
-                    <Route path="item-card" element={<ItemDetail />} />
+                    <Route path="item/:id" element={<ItemDetail />} />
                     <Route path="create-item" element={<CreateItem />} />
                   
                 </Route>

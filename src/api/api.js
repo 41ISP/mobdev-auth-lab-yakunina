@@ -38,6 +38,10 @@ const getItem = async (item) => {
     return res
 }
 
+const getItemDetail = async (item) => {
+    const res = await apiInstance.get("/items-card", item)
+    return res
+}
 
 
 
@@ -46,5 +50,6 @@ export const api = {
     registerUser,
     loginUser,
     getItem,
+    getItemDetail,
     itemsPage
 }
